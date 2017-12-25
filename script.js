@@ -66,20 +66,23 @@ var calcAge = function (currentyear, birthyear) {
 }
 
 //INDIVIDUAL EXERCISE 3
-/*Write a JavaScript function called isPrime that accepts a number as a parameter and checks if the number is prime or not. 
-Return true if it is prime or false if it is not prime. Don't Google this one ;)
+var isPrime = function (num) {
+    if (num === 1) {
+        return false;
+    }
+    else if (num === 2) {
+        return true;
+    } else {
+        for (var x = 2; x < num; x++) {
+            if (num % x === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-Note: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself 
-(for example, 3 is prime as the number 2 does not divide into it , 4 is not prime as 2 does divide into it, 
-    similarly 9 is not prime as 3 divides into it).
- To make sure you understand, is 13 prime?
-
- var isPrime = function(num){
-     if(num > 1 && num.length -1){
-         return true;
-     }
-
- }*/
+}
+console.log(isPrime(1));
 
 //INDIVIDUAL EXERCISE 4
 
